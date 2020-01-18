@@ -1,34 +1,57 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    redirect: '/courses'
   },
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () =>
+      import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/dashboard',
-    name: 'dashboard',
-    component: () => import('../views/Dashboard.vue')
+    path: '/courses', 
+    component: () => import('@/views/Dashboard.vue'),
+    children: [
+      {
+        path: '',
+        name: 'courses',
+        redirect: '/courses/fall'
+      },
+      {
+        path: 'fall',
+        name: 'fall',
+        component: () => import('@/views/CourseTableMeta')
+      },
+      {
+        path: 'winter',
+        name: 'winter',
+        component: () => import('@/views/CourseTableMeta')
+      },
+      {
+        path: 'spring',
+        name: 'spring',
+        component: () => import('@/views/CourseTableMeta')
+      },
+      {
+        path: 'summer',
+        name: 'summer',
+        component: () => import('@/views/CourseTableMeta')
+      }
+    ]
   }
-]
+];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
-})
+});
 
-export default router
+export default router;

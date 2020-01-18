@@ -3,8 +3,8 @@
     <header class="navbar m-2">
       <section class="navbar-section">
         <router-link to="/" class="navbar-brand mr-2"><h5 class="classmate">classmate</h5></router-link>
-        <router-link to="/about" class="btn btn-primary mr-2">about</router-link>
-        <router-link to="/dashboard" class="btn btn-primary">dashboard</router-link>
+        <router-link to="/about" class="btn btn-primary mr-2">About</router-link>
+        <router-link to="/courses/fall" class="btn btn-primary">Courses</router-link>
       </section>
       <section class="navbar-section">
         <div class="input-group input-inline">
@@ -13,7 +13,7 @@
         </div>
       </section>
     </header>
-    <div class="router-view-wrapper">
+    <div class="router-view-wrapper m-2">
       <router-view></router-view>
     </div>
   </div>
