@@ -4,7 +4,7 @@ const parse5 = require('parse5');
 let table = []
 const traverse = require('parse5-traverse');(async () => {
   try {
-    const data = await fetch('https://catalog.ucsc.edu/Current/General-Catalog/Courses/ECON-Economics/Lower-Division/ECON-1', {
+    const data = await fetch('https://catalog.ucsc.edu/Current/General-Catalog/Courses/AM-Applied-Mathematics', {
       method: 'GET'
     })
     const stuff = await data.text()
@@ -17,10 +17,10 @@ const traverse = require('parse5-traverse');(async () => {
           // console.log('eee', node)
           node.attrs.forEach(attr => {
             if (attr.name === 'class' && attr.value === 'desc') {
-              node.childNodes.forEach(node => {
+              node.childNodes.forEach(childNode => {
+                // console.info(childNode.nodeName, childNode.value)
                 console.info(node.nodeName, node.value)
-		table.push({ [node.nodeName] : node.value })
-		console.log(table)
+		table.push({ [childNode.nodeName] : childNode.value })
               })
               // console.log('33333', node)
             }
@@ -31,6 +31,7 @@ const traverse = require('parse5-traverse');(async () => {
       },
       post(node, parent) {      }
     })
+    console.log(table)
   } catch (err) {
     console.error('ERR', err)
   }
