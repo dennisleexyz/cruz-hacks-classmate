@@ -5,14 +5,14 @@
       <table class="table table-striped table-hover">
         <thead>
           <tr>
-            <th>Departmnet</th>
-            <th>Department Number</th>
+            <th>Department</th>
+            <th>Course Number</th>
             <th>Course Title</th>
             <th>Description</th>
             <th>Credits</th>
             <th>Instructor</th>
-            <th>Prereqs</th>
-            <th>GeneralEd</th>
+            <th>Requirements</th>
+            <th>General Education Code</th>
             <!-- <th>Offered During</th> -->
           </tr>
         </thead>
