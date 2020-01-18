@@ -1,0 +1,14 @@
+{
+  "name": "cruz-hacks-classmate",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "serve": "lerna run serve --stream"
+  },
+  "dependencies": {
+    "lerna": "^3.20.2"
+  }
+}

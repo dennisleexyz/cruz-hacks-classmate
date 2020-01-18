@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "npmClient": "yarn",
+  "packages": [
+    "client",
+    "server"
+  ],
+  "command": {
+    "bootstrap": {
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    }
+  },
+  "publish": {
+    "message": "chore: release"
+  }
+}

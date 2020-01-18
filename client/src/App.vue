@@ -13,9 +13,9 @@
         </div>
       </section>
     </header>
-    <main>
+    <div class="router-view-wrapper">
       <router-view></router-view>
-    </main>
+    </div>
   </div>
 </template>
 
@@ -24,7 +24,6 @@
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 

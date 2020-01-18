@@ -2,6 +2,14 @@
 
 module.exports = {
   // publicPath: ''
+  devServer: {
+    compress: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000'
+      }
+    }
+  },
   // configureWebpack: {
   //   plugins: [
   //     new CopyWebpackPlugin([
