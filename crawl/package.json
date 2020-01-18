@@ -1,0 +1,21 @@
+{
+  "name": "crawl",
+  "private": true,
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "GPL-2.9",
+  "scripts": {
+    "dev:scrape1": "nodemon scraper",
+    "dev:scrape2": "nodemon -r esm getCourseLinks",
+    "scrape1": "node scraper",
+    "scrape2": "node -r esm getCourseLinks"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "parse5": "^5.1.1",
+    "parse5-traverse": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
