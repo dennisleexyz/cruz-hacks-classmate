@@ -1,0 +1,672 @@
+{
+  "courses": [
+    {
+      "url": "/Current/General-Catalog/Courses/ACEN-Academic-English",
+      "name": "Courses/ACEN-Academic-English"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/AM-Applied-Mathematics",
+      "name": "Courses/AM-Applied-Mathematics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ANTH-Anthropology",
+      "name": "Courses/ANTH-Anthropology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/APLX-Applied-Linguistics",
+      "name": "Courses/APLX-Applied-Linguistics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ARBC-Arabic",
+      "name": "Courses/ARBC-Arabic"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ART-Art",
+      "name": "Courses/ART-Art"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ARTG-Art-and-Design-Games-and-Playable-Media",
+      "name": "Courses/ARTG-Art-and-Design-Games-and-Playable-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ASTR-Astronomy-and-Astrophysics",
+      "name": "Courses/ASTR-Astronomy-and-Astrophysics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BIOC-Biochemistry-and-Molecular-Biology",
+      "name": "Courses/BIOC-Biochemistry-and-Molecular-Biology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary",
+      "name": "Courses/BIOE-Biology-Ecology-and-Evolutionary"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental",
+      "name": "Courses/BIOL-Biology-Molecular-Cell-and-Developmental"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BME-Biomolecular-Engineering",
+      "name": "Courses/BME-Biomolecular-Engineering"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry",
+      "name": "Courses/CHEM-Chemistry-and-Biochemistry"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CHIN-Chinese",
+      "name": "Courses/CHIN-Chinese"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CLNI-College-Nine",
+      "name": "Courses/CLNI-College-Nine"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CLST-Classical-Studies",
+      "name": "Courses/CLST-Classical-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CLTE-College-Ten",
+      "name": "Courses/CLTE-College-Ten"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CMMU-Community-Studies",
+      "name": "Courses/CMMU-Community-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CMPM-Computational-Media",
+      "name": "Courses/CMPM-Computational-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/COWL-Cowell-College",
+      "name": "Courses/COWL-Cowell-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies",
+      "name": "Courses/CRES-Critical-Race-and-Ethnic-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CRSN-Carson-College",
+      "name": "Courses/CRSN-Carson-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CRWN-Crown-College",
+      "name": "Courses/CRWN-Crown-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering",
+      "name": "Courses/CSE-Computer-Science-and-Engineering"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CSP-Coastal-Science-and-Policy",
+      "name": "Courses/CSP-Coastal-Science-and-Policy"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/DANM-Digital-Arts-and-New-Media",
+      "name": "Courses/DANM-Digital-Arts-and-New-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/EART-Earth-Sciences",
+      "name": "Courses/EART-Earth-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ECE-Electrical-and-Computer-Engineering",
+      "name": "Courses/ECE-Electrical-and-Computer-Engineering"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ECON-Economics",
+      "name": "Courses/ECON-Economics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/EDUC-Education",
+      "name": "Courses/EDUC-Education"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ENVS-Environmental-Studies",
+      "name": "Courses/ENVS-Environmental-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ESCI-Environmental-Sciences",
+      "name": "Courses/ESCI-Environmental-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/FILM-Film-and-Digital-Media",
+      "name": "Courses/FILM-Film-and-Digital-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/FMST-Feminist-Studies",
+      "name": "Courses/FMST-Feminist-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/FREN-French",
+      "name": "Courses/FREN-French"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/GAME-Games-and-Playable-Media",
+      "name": "Courses/GAME-Games-and-Playable-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/GERM-German",
+      "name": "Courses/GERM-German"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/GREE-Greek",
+      "name": "Courses/GREE-Greek"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture",
+      "name": "Courses/HAVC-History-of-Art-and-Visual-Culture"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HEBR-Hebrew",
+      "name": "Courses/HEBR-Hebrew"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HISC-History-of-Consciousness",
+      "name": "Courses/HISC-History-of-Consciousness"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HIS-History",
+      "name": "Courses/HIS-History"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ITAL-Italian",
+      "name": "Courses/ITAL-Italian"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/JAPN-Japanese",
+      "name": "Courses/JAPN-Japanese"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/JWST-Jewish-Studies",
+      "name": "Courses/JWST-Jewish-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/KRSG-Kresge-College",
+      "name": "Courses/KRSG-Kresge-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LAAD-Languages",
+      "name": "Courses/LAAD-Languages"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies",
+      "name": "Courses/LALS-Latin-American-and-Latino-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LATN-Latin",
+      "name": "Courses/LATN-Latin"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LGST-Legal-Studies",
+      "name": "Courses/LGST-Legal-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LING-Linguistics",
+      "name": "Courses/LING-Linguistics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LIT-Literature",
+      "name": "Courses/LIT-Literature"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/MATH-Mathematics",
+      "name": "Courses/MATH-Mathematics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/MERR-Merrill-College",
+      "name": "Courses/MERR-Merrill-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology",
+      "name": "Courses/METX-Microbiology-and-Environmental-Toxicology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/MUSC-Music",
+      "name": "Courses/MUSC-Music"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/OAKS-Oakes-College",
+      "name": "Courses/OAKS-Oakes-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/OCEA-Ocean-Sciences",
+      "name": "Courses/OCEA-Ocean-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PBS-Physical-Biological-Sciences",
+      "name": "Courses/PBS-Physical-Biological-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PERS-Persian",
+      "name": "Courses/PERS-Persian"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PHIL-Philosophy",
+      "name": "Courses/PHIL-Philosophy"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PHYE-Physical-Education",
+      "name": "Courses/PHYE-Physical-Education"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PHYS-Physics",
+      "name": "Courses/PHYS-Physics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/POLI-Politics",
+      "name": "Courses/POLI-Politics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PORT-Portuguese",
+      "name": "Courses/PORT-Portuguese"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PRTR-Porter-College",
+      "name": "Courses/PRTR-Porter-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PSYC-Psychology",
+      "name": "Courses/PSYC-Psychology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PUNJ-Punjabi",
+      "name": "Courses/PUNJ-Punjabi"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/RUSS-Russian",
+      "name": "Courses/RUSS-Russian"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SCIC-Science-Communication",
+      "name": "Courses/SCIC-Science-Communication"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SOCD-Social-Documentation",
+      "name": "Courses/SOCD-Social-Documentation"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SOCY-Sociology",
+      "name": "Courses/SOCY-Sociology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SPAN-Spanish",
+      "name": "Courses/SPAN-Spanish"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SPHS-Spanish-for-Heritage-Speakers",
+      "name": "Courses/SPHS-Spanish-for-Heritage-Speakers"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/STAT-Statistics",
+      "name": "Courses/STAT-Statistics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/STEV-Stevenson-College",
+      "name": "Courses/STEV-Stevenson-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/THEA-Theater-Arts",
+      "name": "Courses/THEA-Theater-Arts"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/UCDC-UCDC",
+      "name": "Courses/UCDC-UCDC"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/WRIT-Writing",
+      "name": "Courses/WRIT-Writing"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/YIDD-Yiddish",
+      "name": "Courses/YIDD-Yiddish"
+    },
+    {
+      "url": "/Current/General-Catalog/Undergraduate-Information",
+      "name": "Undergraduate-Information"
+    },
+    {
+      "url": "/Current/General-Catalog/Graduate-Information",
+      "name": "Graduate-Information"
+    },
+    {
+      "url": "/Current/General-Catalog/Resources-Residency-and-Policies",
+      "name": "Resources-Residency-and-Policies"
+    },
+    {
+      "url": "/Current/General-Catalog/Academic-Calendar",
+      "name": "Academic-Calendar"
+    },
+    {
+      "url": "/Current/General-Catalog/Past-Catalogs",
+      "name": "Past-Catalogs"
+    },
+    {
+      "url": "/Current/General-Catalog",
+      "name": ""
+    },
+    {
+      "url": "/Current/General-Catalog",
+      "name": ""
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ACEN-Academic-English",
+      "name": "Courses/ACEN-Academic-English"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/AM-Applied-Mathematics",
+      "name": "Courses/AM-Applied-Mathematics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ANTH-Anthropology",
+      "name": "Courses/ANTH-Anthropology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/APLX-Applied-Linguistics",
+      "name": "Courses/APLX-Applied-Linguistics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ARBC-Arabic",
+      "name": "Courses/ARBC-Arabic"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ART-Art",
+      "name": "Courses/ART-Art"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ARTG-Art-and-Design-Games-and-Playable-Media",
+      "name": "Courses/ARTG-Art-and-Design-Games-and-Playable-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ASTR-Astronomy-and-Astrophysics",
+      "name": "Courses/ASTR-Astronomy-and-Astrophysics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BIOC-Biochemistry-and-Molecular-Biology",
+      "name": "Courses/BIOC-Biochemistry-and-Molecular-Biology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BIOE-Biology-Ecology-and-Evolutionary",
+      "name": "Courses/BIOE-Biology-Ecology-and-Evolutionary"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BIOL-Biology-Molecular-Cell-and-Developmental",
+      "name": "Courses/BIOL-Biology-Molecular-Cell-and-Developmental"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/BME-Biomolecular-Engineering",
+      "name": "Courses/BME-Biomolecular-Engineering"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CHEM-Chemistry-and-Biochemistry",
+      "name": "Courses/CHEM-Chemistry-and-Biochemistry"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CHIN-Chinese",
+      "name": "Courses/CHIN-Chinese"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CLNI-College-Nine",
+      "name": "Courses/CLNI-College-Nine"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CLST-Classical-Studies",
+      "name": "Courses/CLST-Classical-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CLTE-College-Ten",
+      "name": "Courses/CLTE-College-Ten"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CMMU-Community-Studies",
+      "name": "Courses/CMMU-Community-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CMPM-Computational-Media",
+      "name": "Courses/CMPM-Computational-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/COWL-Cowell-College",
+      "name": "Courses/COWL-Cowell-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CRES-Critical-Race-and-Ethnic-Studies",
+      "name": "Courses/CRES-Critical-Race-and-Ethnic-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CRSN-Carson-College",
+      "name": "Courses/CRSN-Carson-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CRWN-Crown-College",
+      "name": "Courses/CRWN-Crown-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering",
+      "name": "Courses/CSE-Computer-Science-and-Engineering"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/CSP-Coastal-Science-and-Policy",
+      "name": "Courses/CSP-Coastal-Science-and-Policy"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/DANM-Digital-Arts-and-New-Media",
+      "name": "Courses/DANM-Digital-Arts-and-New-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/EART-Earth-Sciences",
+      "name": "Courses/EART-Earth-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ECE-Electrical-and-Computer-Engineering",
+      "name": "Courses/ECE-Electrical-and-Computer-Engineering"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ECON-Economics",
+      "name": "Courses/ECON-Economics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/EDUC-Education",
+      "name": "Courses/EDUC-Education"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ENVS-Environmental-Studies",
+      "name": "Courses/ENVS-Environmental-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ESCI-Environmental-Sciences",
+      "name": "Courses/ESCI-Environmental-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/FILM-Film-and-Digital-Media",
+      "name": "Courses/FILM-Film-and-Digital-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/FMST-Feminist-Studies",
+      "name": "Courses/FMST-Feminist-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/FREN-French",
+      "name": "Courses/FREN-French"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/GAME-Games-and-Playable-Media",
+      "name": "Courses/GAME-Games-and-Playable-Media"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/GERM-German",
+      "name": "Courses/GERM-German"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/GREE-Greek",
+      "name": "Courses/GREE-Greek"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HAVC-History-of-Art-and-Visual-Culture",
+      "name": "Courses/HAVC-History-of-Art-and-Visual-Culture"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HEBR-Hebrew",
+      "name": "Courses/HEBR-Hebrew"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HISC-History-of-Consciousness",
+      "name": "Courses/HISC-History-of-Consciousness"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/HIS-History",
+      "name": "Courses/HIS-History"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/ITAL-Italian",
+      "name": "Courses/ITAL-Italian"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/JAPN-Japanese",
+      "name": "Courses/JAPN-Japanese"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/JWST-Jewish-Studies",
+      "name": "Courses/JWST-Jewish-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/KRSG-Kresge-College",
+      "name": "Courses/KRSG-Kresge-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LAAD-Languages",
+      "name": "Courses/LAAD-Languages"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LALS-Latin-American-and-Latino-Studies",
+      "name": "Courses/LALS-Latin-American-and-Latino-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LATN-Latin",
+      "name": "Courses/LATN-Latin"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LGST-Legal-Studies",
+      "name": "Courses/LGST-Legal-Studies"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LING-Linguistics",
+      "name": "Courses/LING-Linguistics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/LIT-Literature",
+      "name": "Courses/LIT-Literature"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/MATH-Mathematics",
+      "name": "Courses/MATH-Mathematics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/MERR-Merrill-College",
+      "name": "Courses/MERR-Merrill-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/METX-Microbiology-and-Environmental-Toxicology",
+      "name": "Courses/METX-Microbiology-and-Environmental-Toxicology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/MUSC-Music",
+      "name": "Courses/MUSC-Music"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/OAKS-Oakes-College",
+      "name": "Courses/OAKS-Oakes-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/OCEA-Ocean-Sciences",
+      "name": "Courses/OCEA-Ocean-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PBS-Physical-Biological-Sciences",
+      "name": "Courses/PBS-Physical-Biological-Sciences"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PERS-Persian",
+      "name": "Courses/PERS-Persian"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PHIL-Philosophy",
+      "name": "Courses/PHIL-Philosophy"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PHYE-Physical-Education",
+      "name": "Courses/PHYE-Physical-Education"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PHYS-Physics",
+      "name": "Courses/PHYS-Physics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/POLI-Politics",
+      "name": "Courses/POLI-Politics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PORT-Portuguese",
+      "name": "Courses/PORT-Portuguese"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PRTR-Porter-College",
+      "name": "Courses/PRTR-Porter-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PSYC-Psychology",
+      "name": "Courses/PSYC-Psychology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/PUNJ-Punjabi",
+      "name": "Courses/PUNJ-Punjabi"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/RUSS-Russian",
+      "name": "Courses/RUSS-Russian"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SCIC-Science-Communication",
+      "name": "Courses/SCIC-Science-Communication"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SOCD-Social-Documentation",
+      "name": "Courses/SOCD-Social-Documentation"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SOCY-Sociology",
+      "name": "Courses/SOCY-Sociology"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SPAN-Spanish",
+      "name": "Courses/SPAN-Spanish"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/SPHS-Spanish-for-Heritage-Speakers",
+      "name": "Courses/SPHS-Spanish-for-Heritage-Speakers"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/STAT-Statistics",
+      "name": "Courses/STAT-Statistics"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/STEV-Stevenson-College",
+      "name": "Courses/STEV-Stevenson-College"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/THEA-Theater-Arts",
+      "name": "Courses/THEA-Theater-Arts"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/UCDC-UCDC",
+      "name": "Courses/UCDC-UCDC"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/WRIT-Writing",
+      "name": "Courses/WRIT-Writing"
+    },
+    {
+      "url": "/Current/General-Catalog/Courses/YIDD-Yiddish",
+      "name": "Courses/YIDD-Yiddish"
+    }
+  ]
+}

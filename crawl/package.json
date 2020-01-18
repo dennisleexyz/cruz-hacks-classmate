@@ -6,7 +6,7 @@
   "license": "GPL-2.9",
   "scripts": {
     "dev:scrape1": "nodemon scraper",
-    "dev:scrape2": "nodemon -r esm getCourseLinks",
+    "dev:scrape2": "nodemon -r esm -i '*.json' getCourseLinks",
     "scrape1": "node scraper",
     "scrape2": "node -r esm getCourseLinks"
   },

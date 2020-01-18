@@ -1,77 +1,101 @@
 #!/usr/bin/env node
 
+import fs from 'fs';
 import fetch from 'node-fetch';
 import traverse from 'parse5-traverse';
 import parse5 from 'parse5';
 
-let table = [];
-let css = [
-  'desc',
-  'sc-credithours',
-  'instructor',
-  'extraFields',
-  'genEd',
-  'quarter'
-];
-function parseTag(tag) {
-  throw 'notimplemented';
-}
+let outputJson = {
+  courses: []
+};
 
-(async () => {
+!(async () => {
   try {
     const data = await fetch(
-      'https://catalog.ucsc.edu/Current/General-Catalog/Courses/AM-Applied-Mathematics',
-      {
-        method: 'GET'
-      }
+      'https://catalog.ucsc.edu/Current/General-Catalog/Courses/ACEN-Academic-English'
+    );
+    let stuff = await data.text();
+    // stuff = stuff.replace('/\s{2,}/', '')
+    // const rx = /<\/h2><div class="desc"><\/div>\n(.*)/gis;
+    // rx.exec(stuff)
+    //   .forEach(e => {
+    //     console.info(e)
+    //   })
+    // stuff
+    //   // .split(
+    //   //   `<li class="hasChildren"><a href="/Current/General-Catalog/Courses/`
+    //   // )
+    //   .split(`</h2><div class="desc">`)
+    //   .filter(element => element.length < 400)
+    //   .forEach(element => {
+    //     console.info('\n---------------------', element);
+    //   });
+
+
+  } catch (err) {
+    console.error(err)
+  }
+})();
+
+
+!(async () => {
+  try {
+    const data = await fetch(
+      'https://catalog.ucsc.edu/Current/General-Catalog/Courses'
     );
     const stuff = await data.text();
     const document = parse5.parse(stuff);
 
-    const table = []
+    const table = [];
     traverse(document, {
       pre(node, parent) {
-        // console.log('faaa',node)
-        table.push(node)
-        // if (node.nodeName === 'div') {
-        //   console.dir(node.attrs);
-        //   // console.log('eee', node)
-        //   let className = 'desc';
-        //   //css.forEach(className => {
-        //   node.attrs.forEach(attr => {
-        //     if (attr.name === 'class' && attr.value === className) {
-        //       node.childNodes.forEach(childNode => {
-        //         // console.info(childNode.nodeName, childNode.value)
-        //         //console.info(node.nodeName, node.value)
-        //         table.push({ [childNode.nodeName]: childNode.value });
-        //       });
-        //       // console.log('33333', node)
-        //     }
-        //   });
-        //   //})
-        // }
-        // node -> the current node
-        // parent -> the parent node
+        table.push(node);
       }
     });
 
-   const newTable = table
-    .filter(node => {
-      //  console.log(node.attr)
-      return node.nodeName === "div"
-    })
-    .filter(node => {
-      return node.attrs !== undefined
-    })
-    .filter(node => {
-      // console.log(node.attrs)
-      // Array.prototype.some() returns true if at least one element in the array (node.attrs) passes the test
-      return node.attrs.some(nodeAttribute => {
-        return nodeAttribute.name === 'class' && nodeAttribute.value === 'desc';
+    table
+      .filter(node => {
+        return node.nodeName === 'a';
       })
-    })
-   .forEach(el => console.log(el))
+      .filter(node => {
+        return node.attrs !== undefined && node.attrs.length > 0;
+      })
+      .filter(node => {
+        // Array.prototype.some() returns true if at least one element in the array (node.attrs) passes the test
+        return node.attrs.some(nodeAttribute => {
+          return (
+            nodeAttribute.name === 'href' &&
+            nodeAttribute.value.includes('Current/General-Catalog')
+          );
+        });
+      })
+      .forEach(el => {
+        let url = el.attrs[0].value;
+        url = url.slice();
+        const name = url.slice(25);
 
+        if (
+          !new Set([
+            'Welcome-to-UC-Santa-Cruz',
+            'Introducing-UC-Santa-Cruz',
+            'Academic-Programs',
+            'Academic-Units',
+            'Courses'
+          ]).has(name)
+        ) {
+          outputJson.courses.push({
+            url,
+            name
+          });
+        }
+        console.log(url)
+      });
+
+    await fs.promises.writeFile(
+      './courses.json',
+      JSON.stringify(outputJson, null, 2),
+      'utf8'
+    );
   } catch (err) {
     console.error('ERR', err);
   }
