@@ -1,0 +1,2 @@
+<h1 id="h[:digit:]{4\}>[:print:]*</h1>
+  <h2 class="course-name">[:space:]*<a href="/Current/General-Catalog/Courses/[:print:]*"><span>ACEN 110A</span> Advanced Academic English 1</a>
