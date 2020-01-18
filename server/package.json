@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.js",
+  "license": "GPL-3.0",
+  "scripts": {
+    "serve": "nodemon -r esm app"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "helmet": "^3.21.2",
+    "morgan": "^1.9.1"
+  }
+}
