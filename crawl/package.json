@@ -7,8 +7,10 @@
   "scripts": {
     "dev:scrape1": "nodemon scraper",
     "dev:scrape2": "nodemon -r esm -i '*.json' getCourseLinks",
+    "dev:scrape3": "nodemon -r esm -i '*.json' getCourseData",
     "scrape1": "node scraper",
-    "scrape2": "node -r esm getCourseLinks"
+    "scrape2": "node -r esm getCourseLinks",
+    "scrape3": "node -r esm getCourseData"
   },
   "dependencies": {
     "esm": "^3.2.25",

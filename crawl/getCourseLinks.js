@@ -12,35 +12,6 @@ let outputJson = {
 !(async () => {
   try {
     const data = await fetch(
-      'https://catalog.ucsc.edu/Current/General-Catalog/Courses/ACEN-Academic-English'
-    );
-    let stuff = await data.text();
-    // stuff = stuff.replace('/\s{2,}/', '')
-    // const rx = /<\/h2><div class="desc"><\/div>\n(.*)/gis;
-    // rx.exec(stuff)
-    //   .forEach(e => {
-    //     console.info(e)
-    //   })
-    // stuff
-    //   // .split(
-    //   //   `<li class="hasChildren"><a href="/Current/General-Catalog/Courses/`
-    //   // )
-    //   .split(`</h2><div class="desc">`)
-    //   .filter(element => element.length < 400)
-    //   .forEach(element => {
-    //     console.info('\n---------------------', element);
-    //   });
-
-
-  } catch (err) {
-    console.error(err)
-  }
-})();
-
-
-!(async () => {
-  try {
-    const data = await fetch(
       'https://catalog.ucsc.edu/Current/General-Catalog/Courses'
     );
     const stuff = await data.text();
@@ -72,7 +43,7 @@ let outputJson = {
       .forEach(el => {
         let url = el.attrs[0].value;
         url = url.slice();
-        const name = url.slice(25);
+        const name = url.slice(28);
 
         if (
           !new Set([
@@ -84,7 +55,7 @@ let outputJson = {
           ]).has(name)
         ) {
           outputJson.courses.push({
-            url,
+            url: 'https://catalog.ucsc.edu' + url,
             name
           });
         }

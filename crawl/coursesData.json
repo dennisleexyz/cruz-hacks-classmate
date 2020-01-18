@@ -1,0 +1,32 @@
+{
+  "array": [
+    {
+      "link": "https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/ACEN-Academic-English/Upper-Division/ACEN-110A",
+      "shortName": "ACEN 110A",
+      "longName": " Advanced Academic English 1",
+      "descriptionTest": "Students develop an academic vocabulary and successful reading strategies in English in order to understand high-level academic texts. Students also practice pronunciation and apply the rules of grammar to written and spoken academic language through weekly oral presentations and written assignments. Enrollment by instructor consent only.  Enrollment is restricted to international students.",
+      "credits": 5
+    },
+    {
+      "link": "https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/ACEN-Academic-English/Upper-Division/ACEN-110B",
+      "shortName": "ACEN 110B",
+      "longName": " Advanced Academic English 2",
+      "descriptionTest": "Students continue to develop an academic vocabulary (e.g., collocations, idiomatic expressions), which is a significant contributor to successful academic reading and writing. Students also practice complex sentence structures in written and spoken language through weekly oral presentations and written assignments. Enrollment is by instructor consent only.  Enrollment is restricted to international students.",
+      "credits": 5
+    },
+    {
+      "link": "https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/ACEN-Academic-English/Upper-Division/ACEN-110C",
+      "shortName": "ACEN 110C",
+      "longName": " Advanced Grammar in Context",
+      "descriptionTest": "Students continue to develop an academic vocabulary, and practice reading and writing complex sentences in English with a high level of grammatical and stylistic accuracy. Students also increase their oral fluency and pragmatic skills and their awareness of second-language learning. Enrollment by instructor consent only. Enrollment restricted to international students. (Formerly Advanced Academic English 3.)",
+      "credits": 5
+    },
+    {
+      "link": "https://catalog.ucsc.edu/en/Current/General-Catalog/Courses/ACEN-Academic-English/Upper-Division/ACEN-110D",
+      "shortName": "ACEN 110D",
+      "longName": " Advanced Academic English 4",
+      "descriptionTest": "Students continue to develop an academic vocabulary, and practice reading and writing complex essays in English with a high level of grammatical and stylistic accuracy. Students also continue to increase their oral fluency, pragmatic skills, and awareness of second-language learning. Enrollment is by instructor consent only.  Enrollment is restricted to international students.",
+      "credits": 5
+    }
+  ]
+}
