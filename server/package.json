@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "private": true,
   "main": "index.js",
   "license": "GPL-3.0",
