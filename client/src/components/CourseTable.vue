@@ -7,11 +7,8 @@
           <h1 style="margin-bottom: 0; margin-top: 20px;">
             {{
               Object.entries(course)[0][0]
-                .replace('-', ' ')
-                .replace('-', ' ')
-                .replace('-', ' ')
-                .replace('-', ' ')
-                .replace('-', ' ')
+                .replace(/-/g, ' ')
+                .replace(' ', ' - ')
             }}
           </h1>
           <div>
@@ -35,7 +32,7 @@
                 >
                   <template v-if="foo.quartersOffered[currentQuarter]">
                     <!-- {{ foo }} -->
-                    <td><a :href="foo.link" :title="Object.entries(course)[0][0]"  target="__blank">{{ foo.departmentName }}</a></td>
+                    <td><a :href="foo.link" :title="Object.entries(course)[0][0].replace(/-/g, ' ').replace(' ', ' - ')" target="__blank">{{ foo.departmentName }}</a></td>
                 <td><a :href="foo.link" :title="foo.shortName" target="__blank">{{ foo.courseNumber }}</a></td>
                 <td><span :title=foo.descriptionTest>{{ foo.longName }}</span></td>
                 <td>{{ foo.credits }}</td>
