@@ -1,6 +1,6 @@
 # classmate
 
-a place for
+displays UCSC course information in an easy to use interface, showing, class name, department, and other useful information
 
 ## contributing
 
@@ -10,4 +10,3 @@ cd cruz-hacks-classmate
 yarn bootstrap
 yarn serve
 ```
-
