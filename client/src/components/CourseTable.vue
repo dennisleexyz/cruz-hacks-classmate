@@ -1,37 +1,56 @@
 <template>
   <main>
-    <div v-if="!isLoaded" class="loading loading-lg"></div>
-    <div v-else class="loaded">
-      <div v-for="course in filteredCourses"
-            :key="course.link">
-        <h1>{{ Object.entries(course)[0][0] }}</h1>
-        <div >
-          <!-- {{ foo }} -->
-          <table class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th>Class Code</th>
-                <th>Class Title</th>
-                <!-- <th>Department</th>
+    <keep-alive>
+      <div v-if="!isLoaded" class="loading loading-lg"></div>
+      <div v-else class="loaded">
+        <div v-for="course in filteredCourses" :key="course.link">
+          <h1 style="margin-bottom: 0; margin-top: 20px;">
+            {{
+              Object.entries(course)[0][0]
+                .replace('-', ' ')
+                .replace('-', ' ')
+                .replace('-', ' ')
+                .replace('-', ' ')
+                .replace('-', ' ')
+            }}
+          </h1>
+          <div>
+            <!-- {{ foo }} -->
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th>Class Code</th>
+                  <th>Class Title</th>
+                  <!-- <th>Department</th>
                 <th>Class Number</th> -->
-                <!-- <th>Description Test</th> -->
-                <th>Credits</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="foo in Object.entries(course)[0][1]" :key="foo.link">
-                <td><a :href="foo.link" target="__blank">{{ foo.shortName }}</a></td>
-                <td>{{ foo.longName }}</td>
-                <!-- <td>{{ foo.departmentName }}</td>
+                  <!-- <th>Description Test</th> -->
+                  <th>Credits</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  v-for="foo in Object.entries(course)[0][1]"
+                  :key="foo.link + foo.longName"
+                >
+                  <template v-if="foo.quartersOffered[currentQuarter]">
+                    <!-- {{ foo }} -->
+                    <td>
+                      <a :href="foo.link" target="__blank">{{
+                        foo.longName
+                      }}</a>
+                    </td>
+                    <td>{{ foo.longName }}</td>
+                    <!-- <td>{{ foo.departmentName }}</td>
                 <td>{{ foo.courseNumber }}</td> -->
-                <!-- <td>{{ foo.descriptionTest }}</td> -->
-                <td>{{ foo.credits }}</td>
-              </tr>
-            </tbody>
-          </table>
+                    <!-- <td>{{ foo.descriptionTest }}</td> -->
+                    <td>{{ foo.credits }}</td>
+                  </template>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-      <!-- <table class="table table-striped table-hover">
+        <!-- <table class="table table-striped table-hover">
         <thead>
           <tr>
             <th>Department</th>
@@ -63,7 +82,8 @@
           </tr>
         </tbody>
       </table> -->
-    </div>
+      </div>
+    </keep-alive>
   </main>
 </template>
 
@@ -115,7 +135,15 @@ export default {
       // return this.courses.filter(
       //   course => course.offeredDuring[this.currentQuarter]
       // );
-      return this.courses
+      return this.courses;
+    }
+  },
+  methods: {
+    kappafoo(course, foo) {
+      return Object.entries(course)[0][1].filter(objs => {
+        console.log(objs);
+        return foo[this.currentQuarter];
+      });
     }
   }
 };

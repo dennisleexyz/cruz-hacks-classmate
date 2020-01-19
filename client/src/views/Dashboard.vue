@@ -2,7 +2,10 @@
   <div class="dashboard">
     <h1>Dashboard</h1>
     <QuarterTabs />
-    <router-view></router-view>
+    <keep-alive>
+          <router-view></router-view>
+
+    </keep-alive>
   </div>
 </template>
 

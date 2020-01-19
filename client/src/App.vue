@@ -14,7 +14,10 @@
       </section>
     </header>
     <div class="router-view-wrapper m-2">
+      <keep-alive>
       <router-view></router-view>
+
+      </keep-alive>
     </div>
   </div>
 </template>
