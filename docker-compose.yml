@@ -1,0 +1,36 @@
+version: '3.7'
+services:
+  server:
+    image: node:13-slim
+    working_dir: /opt/app/server
+    user: 1000:1000
+    command: yarn serve
+    volumes:
+      - type: bind
+        source: ./server
+        target: /opt/app/server
+    ports:
+      - target: 3000
+        published: 3000
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    restart: always
+    privileged: false
+    stdin_open: true
+    tty: true
+  client:
+    image: node:13-slim
+    working_dir: /opt/app/client
+    user: 1000:1000
+    command: yarn serve
+    volumes:
+      - type: bind
+        source: ./client
+        target: /opt/app/client
+    ports:
+      - target: 8080
+        published: 8080
+    environment:
+      - NODE_ENV=development
+      - PORT=8080
