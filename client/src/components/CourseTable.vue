@@ -10,20 +10,20 @@
           <table class="table table-striped table-hover">
             <thead>
               <tr>
-                <th>Class Code</th>
-                <th>Class Title</th>
-                <!-- <th>Department</th>
-                <th>Class Number</th> -->
+                <th>Department</th>
+                <th>Course #</th>
+                <th>Course Title</th>
                 <!-- <th>Description Test</th> -->
-                <th>Credits</th>
+                <th>Units</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="foo in Object.entries(course)[0][1]" :key="foo.link">
-                <td><a :href="foo.link" target="__blank">{{ foo.shortName }}</a></td>
+                <td><a :href="foo.link" target="__blank">{{ foo.departmentName }}</a></td>
+                <td><a :href="foo.link" target="__blank">{{ foo.courseNumber }}</a></td>
                 <td>{{ foo.longName }}</td>
-                <!-- <td>{{ foo.departmentName }}</td>
-                <td>{{ foo.courseNumber }}</td> -->
+                <!-- <td></td>
+                <td></td> -->
                 <!-- <td>{{ foo.descriptionTest }}</td> -->
                 <td>{{ foo.credits }}</td>
               </tr>
