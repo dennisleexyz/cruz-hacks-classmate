@@ -19,12 +19,11 @@
             <table class="table table-striped table-hover">
               <thead>
                 <tr>
-                  <th>Class Code</th>
-                  <th>Class Title</th>
-                  <!-- <th>Department</th>
-                <th>Class Number</th> -->
-                  <!-- <th>Description Test</th> -->
-                  <th>Credits</th>
+                 <th>Department</th>
+                <th>Course #</th>
+                <th>Course Title</th>
+                <!-- <th>Description Test</th> -->
+                <th>Units</th>
                 </tr>
               </thead>
               <tbody>
@@ -34,16 +33,13 @@
                 >
                   <template v-if="foo.quartersOffered[currentQuarter]">
                     <!-- {{ foo }} -->
-                    <td>
-                      <a :href="foo.link" target="__blank">{{
-                        foo.longName
-                      }}</a>
-                    </td>
-                    <td>{{ foo.longName }}</td>
-                    <!-- <td>{{ foo.departmentName }}</td>
-                <td>{{ foo.courseNumber }}</td> -->
-                    <!-- <td>{{ foo.descriptionTest }}</td> -->
-                    <td>{{ foo.credits }}</td>
+                    <td><a :href="foo.link" :title="Object.entries(course)[0][0]"  target="__blank">{{ foo.departmentName }}</a></td>
+                <td><a :href="foo.link" :title="foo.shortName" target="__blank">{{ foo.courseNumber }}</a></td>
+                <td><span :title=foo.descriptionTest>{{ foo.longName }}</span></td>
+                <!-- <td></td>
+                <td></td> -->
+                <!-- <td>{{ foo.descriptionTest }}</td> -->
+                <td>{{ foo.credits }}</td>
                   </template>
                 </tr>
               </tbody>
