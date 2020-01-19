@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h1>Dashboard</h1>
+    <h1>Courses</h1>
     <QuarterTabs />
     <keep-alive>
           <router-view></router-view>
@@ -14,7 +14,7 @@ import QuarterTabs from '@/components/QuarterTabs'
 import CourseTable from '@/components/CourseTable';
 
 export default {
-  name: 'Dashboard',
+  name: 'Courses',
   components: {
     QuarterTabs,
     CourseTable
