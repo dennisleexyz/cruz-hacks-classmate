@@ -14,7 +14,7 @@ import QuarterTabs from '@/components/QuarterTabs'
 import CourseTable from '@/components/CourseTable';
 
 export default {
-  name: 'Dashboard',
+  name: 'Courses',
   components: {
     QuarterTabs,
     CourseTable
