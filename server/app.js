@@ -1,3 +1,5 @@
+import path from 'path'
+
 import express from 'express'
 import helmet from 'helmet'
 import morgan from 'morgan'
@@ -11,7 +13,7 @@ app.use(helmet())
 app.use(morgan('tiny'))
 app.use('/api', express.static('public')) // only for finalData.json
 app.use(express.static('public'));
-
+app.get('/*', (req, res) => res.sendFile(path.join(__dirname, './public/index.html')))
 
 // app.use('/', rootRoutes)
 app.use('/api', apiRoutes)
