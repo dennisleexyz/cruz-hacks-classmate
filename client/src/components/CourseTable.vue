@@ -4,13 +4,6 @@
       <div v-if="!isLoaded" class="loading loading-lg"></div>
       <div v-else class="loaded">
         <div v-for="course in filteredCourses" :key="course.link">
-          <h1 style="margin-bottom: 0; margin-top: 20px;">
-            {{
-              Object.entries(course)[0][0]
-                .replace(/-/g, ' ')
-                .replace(' ', ' - ')
-            }}
-          </h1>
           <div>
             <!-- {{ foo }} -->
             <table class="table table-striped table-hover">
@@ -20,10 +13,10 @@
                   <th>Course #</th>
                   <th>Course Title</th>
                   <th>Course Level</th>
-                  <th>Units</th>
-                  <th>Instructor</th>
+                  <th><a href=https://registrar.ucsc.edu/navigator/section1/credit/index.html>Units</a></th>
+                  <th><a href=https://campusdirectory.ucsc.edu/>Instructor</a></th>
                   <th>Requirements</th>
-                  <th>General Education Code</th>
+                  <th><a href=https://registrar.ucsc.edu/catalog/undergrad-acad/index.html#gened>General Education Code</a></th>
                 </tr>
               </thead>
               <tbody>
