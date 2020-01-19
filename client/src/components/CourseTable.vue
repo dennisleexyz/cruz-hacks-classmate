@@ -40,7 +40,7 @@
                 <td>{{ foo.credits }}</td>
                 <td>{{ foo.professors.toString().replace(/,/g, ', ') }}</td>
                 <td>{{ foo.prereqs }}</td>
-                <td>{{ foo.generalEducationCode }}</td>
+                <td><a :href="linkGe(foo.generalEducationCode)">{{ foo.generalEducationCode }}</a></td>
                   </template>
                 </tr>
               </tbody>
@@ -153,6 +153,26 @@ export default {
       else {
 	return("Graduate")
       }
+    },
+    linkGe(code) {
+      let mapping = {
+	'CC' : 'undergrad-acad/index.html#CrossCulturalAnalysis',
+	'ER' : 'undergrad-acad/index.html#EthnicityandRace',
+	'IM' : 'undergrad-acad/index.html#InterpretingArtsandMedia',
+	'MF' : 'undergrad-acad/index.html#MathematicalandFormalReasoning',
+	'SI' : 'undergrad-acad/index.html#ScientificInquiry',
+	'SR' : 'undergrad-acad/index.html#StatisticalReasoning',
+	'TA' : 'undergrad-acad/index.html#TextualAnalysis',
+	'PE-E' : 'undergrad-acad/index.html#Perspectives',
+	'PE-H' : 'undergrad-acad/index.html#Perspectives',
+	'PE-T' : 'undergrad-acad/index.html#Perspectives',
+	'PR-E' : 'undergrad-acad/index.html#Practice',
+	'PR-C' : 'undergrad-acad/index.html#Practice',
+	'PR-S' : 'undergrad-acad/index.html#Practice',
+	'C' : 'undergrad-acad/index.html#Composition',
+	'DC' : 'programs-courses/disciplinary-communicationchart.html#DisciplinaryCommunication'
+      }
+      return("https://registrar.ucsc.edu/catalog/" + mapping[code])
     }
   }
 };
