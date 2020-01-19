@@ -34,8 +34,8 @@
       <!-- <table class="table table-striped table-hover">
         <thead>
           <tr>
-            <th>Departmnet</th>
-            <th>Department Number</th>
+            <th>Department</th>
+            <th>Course Number</th>
             <th>Course Title</th>
             <th>Description</th>
             <th>Credits</th>
