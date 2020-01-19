@@ -52,6 +52,8 @@ function doStuff() {
           t1.push({
             link: el.attrs[0].value,
             shortName: el.childNodes[0].childNodes[0].value,
+            departmentName: el.childNodes[0].childNodes[0].value.split(' ')[0],
+            courseNumber: el.childNodes[0].childNodes[0].value.split(' ')[1],
             longName: el.childNodes[1].value
           });
         }
@@ -169,6 +171,12 @@ function doStuff() {
                  t1.push({
                    link: el.attrs[0].value,
                    shortName: el.childNodes[0].childNodes[0].value,
+                   departmentName: el.childNodes[0].childNodes[0].value.split(
+                     ' '
+                   )[0],
+                   courseNumber: el.childNodes[0].childNodes[0].value.split(
+                     ' '
+                   )[1],
                    longName: el.childNodes[1].value
                  });
                }
@@ -232,6 +240,8 @@ function doStuff() {
                link: 'https://catalog.ucsc.edu' + t1[i].link,
                shortName: t1[i].shortName,
                longName: t1[i].longName,
+               departmentName: t1[i].departmentName,
+               courseNumber: t1[i].courseNumber,
                descriptionTest: t2[i].text.trim(),
                credits: parseInt(t3[i].text.trim())
              });
