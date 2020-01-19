@@ -9,7 +9,9 @@ const app = express()
 
 app.use(helmet())
 app.use(morgan('tiny'))
-app.use('/api', express.static('public'))
+app.use('/api', express.static('public')) // only for finalData.json
+app.use(express.static('public'));
+
 
 // app.use('/', rootRoutes)
 app.use('/api', apiRoutes)
