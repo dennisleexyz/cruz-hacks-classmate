@@ -21,7 +21,7 @@
               <tr v-for="foo in Object.entries(course)[0][1]" :key="foo.link">
                 <td><a :href="foo.link" target="__blank">{{ foo.departmentName }}</a></td>
                 <td><a :href="foo.link" target="__blank">{{ foo.courseNumber }}</a></td>
-                <td>{{ foo.longName }}</td>
+                <td><span :title=foo.descriptionTest>{{ foo.longName }}</span></td>
                 <!-- <td></td>
                 <td></td> -->
                 <!-- <td>{{ foo.descriptionTest }}</td> -->
