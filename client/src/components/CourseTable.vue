@@ -13,10 +13,10 @@
                   <th>Course #</th>
                   <th>Course Title</th>
                   <th>Course Level</th>
-                  <th>Units</th>
-                  <th>Instructor</th>
+                  <th><a href=https://registrar.ucsc.edu/navigator/section1/credit/index.html>Units</a></th>
+                  <th><a href=https://campusdirectory.ucsc.edu/>Instructor</a></th>
                   <th>Requirements</th>
-                  <th>General Education Code</th>
+                  <th><a href=https://registrar.ucsc.edu/catalog/undergrad-acad/index.html#gened>General Education Code</a></th>
                 </tr>
               </thead>
               <tbody>
