@@ -1,17 +1,26 @@
-let fs = require('fs')
+let fs = require('fs');
 
-fs.promises.readFile('./coursesData.json', 'utf8')
+fs.promises
+  .readFile('./thingy.json', 'utf8')
   .then(data => {
-    const json = JSON.parse(data)
+    const json = JSON.parse(data);
 
-    let a = json.array;
-    for (e of a) {
-      e.department = e.shortName.split(' ')[0];
-      e.courseNumber = e.shortName.split(' ')[1];
+    for (e of json.stuff) {
+      if (e.shortName) {
+        e.department = e.shortName.split(' ')[0];
+        e.courseNumber = e.shortName.split(' ')[1];
+      } else {
+        // console.log(e)
+      }
     }
-    return { array: json.array };
 
+    return { data: json.stuff };
   })
   .then(final => {
-    return fs.promises.writeFile('./finalData.json', JSON.stringify(final, null, 2), 'utf8')
+    return fs.promises.writeFile(
+      './finalData.json',
+      JSON.stringify(final, null, 2),
+      'utf8'
+    );
   })
+  .catch(err => console.error(err));

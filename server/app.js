@@ -9,6 +9,7 @@ const app = express()
 
 app.use(helmet())
 app.use(morgan('tiny'))
+app.use('/api', express.static('public'))
 
 // app.use('/', rootRoutes)
 app.use('/api', apiRoutes)

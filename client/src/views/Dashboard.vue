@@ -23,12 +23,12 @@ export default {
     };
   },
   async created() {
-    const data = await fetch('/api/classes', {
-      method: 'GET'
-    });
-    const json = await data.json();
-    this.classes = json.data;
-    this.isLoaded = true;
+    // const data = await fetch('/api/finalData', {
+    //   method: 'GET'
+    // });
+    // const json = await data.json();
+    // this.classes = json.data;
+    // this.isLoaded = true;
   }
 };
 </script>

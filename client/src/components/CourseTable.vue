@@ -2,7 +2,36 @@
   <main>
     <div v-if="!isLoaded" class="loading loading-lg"></div>
     <div v-else class="loaded">
-      <table class="table table-striped table-hover">
+      <div v-for="course in filteredCourses"
+            :key="course.link">
+        <h1>{{ Object.entries(course)[0][0] }}</h1>
+        <div >
+          <!-- {{ foo }} -->
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Class Code</th>
+                <th>Class Title</th>
+                <!-- <th>Department</th>
+                <th>Class Number</th> -->
+                <!-- <th>Description Test</th> -->
+                <th>Credits</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="foo in Object.entries(course)[0][1]" :key="foo.link">
+                <td><a :href="foo.link" target="__blank">{{ foo.shortName }}</a></td>
+                <td>{{ foo.longName }}</td>
+                <!-- <td>{{ foo.departmentName }}</td>
+                <td>{{ foo.courseNumber }}</td> -->
+                <!-- <td>{{ foo.descriptionTest }}</td> -->
+                <td>{{ foo.credits }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!-- <table class="table table-striped table-hover">
         <thead>
           <tr>
             <th>Departmnet</th>
@@ -13,27 +42,27 @@
             <th>Instructor</th>
             <th>Prereqs</th>
             <th>GeneralEd</th>
-            <!-- <th>Offered During</th> -->
+            <th>Offered During</th>
           </tr>
         </thead>
         <tbody>
           <tr
             v-for="(course, i) in filteredCourses"
-            :key="course.courseTitle"
+            :key="course.link"
             :class="{ active: i % 2 === 0 }"
           >
-            <td>{{ course.department }}</td>
-            <td>{{ course.departmentNumber }}</td>
-            <td>{{ course.courseTitle }}</td>
-            <td>{{ course.description }}</td>
-            <td>{{ course.credits }}</td>
-            <td>{{ course.instructor }}</td>
+            <td>{{ course.link }}</td>
+            <td>{{ course.shortName }}</td>
+            <td>{{ course.longName }}</td>
+            <td>{{ course.departmentName }}</td>
+            <td>{{ course.courseNumber }}</td>
+            <td>{{ course.descriptionTest }}</td>
             <td>{{ course.prereqs }}</td>
             <td>{{ course.generalEd }}</td>
-            <!-- <td>{{ course.offeredDuring }}</td> -->
+            <td>{{ course.offeredDuring }}</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
     </div>
   </main>
 </template>
@@ -73,18 +102,20 @@ export default {
     };
   },
   async created() {
-    const data = await fetch('/api/classes', {
+    const data = await fetch('/api/finalData.json', {
       method: 'GET'
     });
     const json = await data.json();
+    // console.log(json.data)
     this.courses = json.data;
     this.isLoaded = true;
   },
   computed: {
     filteredCourses() {
-      return this.courses.filter(
-        course => course.offeredDuring[this.currentQuarter]
-      );
+      // return this.courses.filter(
+      //   course => course.offeredDuring[this.currentQuarter]
+      // );
+      return this.courses
     }
   }
 };
