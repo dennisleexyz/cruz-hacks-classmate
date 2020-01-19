@@ -4,13 +4,6 @@
       <div v-if="!isLoaded" class="loading loading-lg"></div>
       <div v-else class="loaded">
         <div v-for="course in filteredCourses" :key="course.link">
-          <h1 style="margin-bottom: 0; margin-top: 20px;">
-            {{
-              Object.entries(course)[0][0]
-                .replace(/-/g, ' ')
-                .replace(' ', ' - ')
-            }}
-          </h1>
           <div>
             <!-- {{ foo }} -->
             <table class="table table-striped table-hover">
