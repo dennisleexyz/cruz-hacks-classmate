@@ -1,6 +1,6 @@
 <template>
   <div class="dashboard">
-    <h1>Dashboard</h1>
+    <h1>Courses</h1>
     <QuarterTabs />
     <keep-alive>
           <router-view></router-view>

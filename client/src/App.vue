@@ -6,12 +6,12 @@
         <router-link to="/about" class="btn btn-primary mr-2">About</router-link>
         <router-link to="/courses/fall" class="btn btn-primary">Courses</router-link>
       </section>
-      <section class="navbar-section">
-        <div class="input-group input-inline">
+      <!-- <section class="navbar-section"> -->
+        <!-- <div class="input-group input-inline">
           <input class="form-input" type="text" placeholder="search" />
           <button class="btn btn-primary input-group-btn">Search</button>
-        </div>
-      </section>
+        </div> -->
+      <!-- </section> -->
     </header>
     <div class="router-view-wrapper m-2">
       <keep-alive>
