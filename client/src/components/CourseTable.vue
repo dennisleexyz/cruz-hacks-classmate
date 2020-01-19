@@ -22,8 +22,10 @@
                  <th>Department</th>
                 <th>Course #</th>
                 <th>Course Title</th>
-                <!-- <th>Description Test</th> -->
                 <th>Units</th>
+                <th>Instructor</th>
+                <th>Requirements</th>
+                <th>General Education Code</th>
                 </tr>
               </thead>
               <tbody>
@@ -36,10 +38,10 @@
                     <td><a :href="foo.link" :title="Object.entries(course)[0][0]"  target="__blank">{{ foo.departmentName }}</a></td>
                 <td><a :href="foo.link" :title="foo.shortName" target="__blank">{{ foo.courseNumber }}</a></td>
                 <td><span :title=foo.descriptionTest>{{ foo.longName }}</span></td>
-                <!-- <td></td>
-                <td></td> -->
-                <!-- <td>{{ foo.descriptionTest }}</td> -->
                 <td>{{ foo.credits }}</td>
+                <td>{{ foo.professors.toString().replace(/,/g, ', ') }}</td>
+                <td>{{ foo.prereqs }}</td>
+                <td>{{ foo.generalEducationCode }}</td>
                   </template>
                 </tr>
               </tbody>
