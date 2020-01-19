@@ -1,5 +1,7 @@
 # node
 node_modules/
+server/public/*
+!server/public/finalData.json
 
 # editor
 .vscode/

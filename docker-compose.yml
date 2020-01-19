@@ -34,3 +34,7 @@ services:
     environment:
       - NODE_ENV=development
       - PORT=8080
+    restart: always
+    priviledged: false
+    stdin_open: true
+    tty: true
