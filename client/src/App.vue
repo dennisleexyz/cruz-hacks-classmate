@@ -3,7 +3,7 @@
     <header class="navbar m-2">
       <section class="navbar-section">
         <div class="navbar-brand mr-2"><h5 class="classmate">Classmate</h5></div>
-        <router-link to="/about" class="btn btn-primary mr-2">About</router-link>
+        <a href="https://devpost.com/software/classmate-ygiz1a" class="btn btn-primary mr-2">About</a>
         <router-link to="/courses/fall" class="btn btn-primary">Courses</router-link>
       </section>
       <!-- <section class="navbar-section"> -->
